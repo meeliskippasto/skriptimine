@@ -27,3 +27,17 @@ git add failinimi (failinimi 2, failinimi N)
 
 8. Koosta jälgitavale failile commit - see on muudatuse kirjeldus
 get commit -m "muudatuse sõneline kirjeldus"
+
+
+--- remote --- Punkte 9.-10. teeme ükskord, et tekitada repo ja ühendus ---
+
+9. Loo repo githubis - git@github.com:kasutaja/reponimi.git
+
+10. Loo remote ühendus githubi repoga 
+git remote add ühendusnimi git@github.com:kasutaja/reponimi.git
+
+git remote -v
+
+---- 11. remote - teeme korduvalt iga commit sooritamise pärast ---
+11. Lükka lokaalsed muudatused githubi
+git push -uf ühendusenimi master
